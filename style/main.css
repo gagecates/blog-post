@@ -1,0 +1,132 @@
+/* Small Screens */
+.container{
+    
+    display:grid;
+    grid-gap: 10px;
+    height:99vh;
+    margin: auto;
+    grid-template-rows: 50px 50px 1fr 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "hd"
+    "mn"
+    "ct"
+    "ft";
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width:1100px){
+    .container{
+    
+        display:grid;
+        grid-gap: 10px;
+        width:99vw;
+        height:99vh;
+        margin:auto;
+        grid-template-rows: 100px 800px 1fr;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-areas:
+        "hd hd hd hd hd hd hd"
+        "mn ct ct ct ct ct ct"
+        "ft ft ft ft ft ft ft";
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1101px){
+    .container{
+    
+        display:grid;
+        grid-gap: 10px;
+        width:99vw;
+        height:99vh;
+        margin:auto;
+        grid-template-rows: 100px 800px 1fr;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-areas:
+        "hd hd hd hd hd hd hd"
+        "mn ct ct ct ct ct ct"
+        "ft ft ft ft ft ft ft";
+    }
+}
+
+
+
+body{
+    background-color: rgb(12, 12, 12);
+
+}
+
+#nested-blip-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.blog-blip{
+    align-items: center;
+    background-color: rgb(196, 175, 175);
+    text-align: center;
+    font-size:1vw;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.restaurant-image{
+    width:25vw;
+    border-radius: 8px;
+}
+
+.section{
+    border-radius: 12px;
+    background-color: #afa6af;
+    display: flex;
+    justify-content: center;
+
+}
+
+#header{
+    grid-area: hd;
+    font-family: cursive;
+    font-size: 1.75vw;
+    text-shadow: 2px 2px 8px #f8f6f6;
+    align-items: center;
+}
+
+#menu{
+    grid-area: mn;
+    
+}
+
+#menu-options{
+    text-align: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+@media (max-width:600px){
+    #menu-options{
+        display: flex;
+    }
+}
+
+#content{
+    justify-content: center;
+    grid-area: ct;
+    background-color: rgb(10, 10, 10);
+}
+
+#footer{
+    grid-area: ft;
+    align-items: center;
+    font-weight: bold;
+    font-size:20px;
+}
+
+
+ p{
+    padding-right: 5px;
+    padding-left: 5px;
+ }
+
