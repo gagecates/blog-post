@@ -1,0 +1,76 @@
+.blog-container{
+    display:grid;
+    grid-gap: 10px;
+    height:99vh;
+    margin: auto;
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "hd"
+    "ct"
+    "ft";
+}
+
+#content-column{
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "intro"
+    "main"
+    "fav";
+    width: 50vw;
+    text-align: center;
+    align-items: top;
+    background-color: #fcf9f9;
+}
+
+#intro{
+    grid-area: intro;
+}
+
+#first-encounter{
+    grid-area: main;
+}
+
+#favorites{
+    grid-area: fav;
+    list-style-position: inside;
+}
+
+#blog-header{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    grid-area: hd;
+    padding: 5px;
+}
+
+#home-button{
+   
+}
+
+#blog-header h1{
+    font-family: cursive;
+    font-size: 1.75vw;
+    width: 200px;
+    margin: 0 auto;
+}
+
+#blog-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../pics/sauces.jpg");
+    grid-area: ct;
+}
+
+#blog-footer{
+    display: flex;
+    justify-content: center;
+    grid-area: ft;
+}
+
+.navigate{
+    font-size: 20px;
+}
