@@ -13,12 +13,13 @@
 
 #content-column{
     display: grid;
-    grid-template-rows: 200px 1fr 1fr;
+    grid-template-rows: 200px 1fr 1fr 100px;
     grid-template-columns: 1fr;
     grid-template-areas:
     "intro"
     "main"
-    "fav";
+    "fav"
+    "social";
     width: 50vw;
     text-align: center;
     align-items: top;
@@ -38,6 +39,52 @@
     list-style-position: inside;
 }
 
+#blog-content-tbell{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../pics/taco bell blog.jpg");
+    grid-area: ct;
+}
+
+#blog-content-canes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../pics/canes blog.png");
+    grid-area: ct;
+}
+
+#blog-content-panda{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../pics/panda blog.jpg");
+    grid-area: ct;
+}
+
+#blog-content-in-n-out{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-image: url("../pics/in-n-out blog.jpg");
+    grid-area: ct;
+}
+
+#social{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: social;
+    border-radius: 8px;
+}
+
+#twitter-logo{
+    max-width: 4vw;
+    height: auto;
+    border-radius: 8px;
+}
+
 #blog-header{
     display: flex;
     align-items: center;
@@ -46,23 +93,11 @@
     padding: 5px;
 }
 
-#home-button{
-   
-}
-
 #blog-header h1{
     font-family: cursive;
     font-size: 1.75vw;
     width: 200px;
     margin: 0 auto;
-}
-
-#blog-content{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-image: url("../pics/sauces.jpg");
-    grid-area: ct;
 }
 
 #blog-footer{

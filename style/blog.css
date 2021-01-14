@@ -1,0 +1,59 @@
+p{
+    padding-right: 5px;
+    padding-left: 5px;
+ }
+
+ #main-content{
+    justify-content: center;
+    grid-area: ct;
+    background-color: rgb(10, 10, 10);
+}
+
+#nested-blip-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.blog-blip{
+    align-items: center;
+    background-color: rgb(190, 188, 188);
+    text-align: center;
+    font-size:1vw;
+    border-radius: 12px;
+}
+
+.restaurant-image{
+    width:25vw;
+    border-radius: 8px;
+}
+
+#main-header{
+    display: flex;
+    justify-content: center;
+    grid-area: hd;
+    font-family: cursive;
+    font-size: 1.55vw;
+    text-shadow: 2px 2px 8px #f8f6f6;
+    align-items: center;
+}
+
+#menu{
+    grid-area: mn;
+}
+
+#menu-options{
+    text-align: center;
+    align-items: center;
+    font-size: 2vw;
+}
+
+#main-footer{
+    display: flex;
+    justify-content: center;
+    grid-area: ft;
+    align-items: center;
+    font-weight: bold;
+    font-size:20px;
+}

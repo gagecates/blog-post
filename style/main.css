@@ -1,6 +1,6 @@
+@import url("blog.css");
 @import url("blog-post.css");
 @import url("media-queries.css");
-@import url("content.css");
 
 
 body{
@@ -9,34 +9,20 @@ body{
 
 .section{
     border-radius: 12px;
-    background-color: #afa6af;
+    background-color: #5f33a7;
 }
 
-#main-header{
-    display: flex;
-    justify-content: center;
-    grid-area: hd;
-    font-family: cursive;
-    font-size: 1.55vw;
-    text-shadow: 2px 2px 8px #f8f6f6;
-    align-items: center;
-}
-
-#menu{
-    grid-area: mn;
-}
-
-#menu-options{
-    text-align: center;
-    align-items: center;
-    font-size: 2vw;
-}
-
-#main-footer{
-    display: flex;
-    justify-content: center;
-    grid-area: ft;
-    align-items: center;
-    font-weight: bold;
-    font-size:20px;
-}
+/* unvisited link */
+a:link {
+    color: black;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: yellow;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
